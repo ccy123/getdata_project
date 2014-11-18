@@ -15,6 +15,3 @@ I have put both tidy_data.txt and detail.txt in this repository.
 ### CodeBook
 
 CodeBook.md describes the variables, the data, and any transformations or work that I performed to clean up the data.
-
-Ple
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
