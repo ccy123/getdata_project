@@ -38,7 +38,7 @@ data_test <- cbind(cbind(subject_test, y_test), X_test)
 
 # marge, output file
 data <- rbind(data_train, data_test)
-write.table(data, file = "./tidy_data.txt")
+write.table(data, row.name=FALSE, file = "./tidy_data.txt")
 
 #
 detail <- aggregate(data, by=list(data$activity, data$subject), FUN=mean)
@@ -46,4 +46,4 @@ detail[,3]=NULL
 detail[,3]=NULL
 colnames(detail)[1] <- "activity"
 colnames(detail)[2] <- "subject"
-write.table(detail, file = "./detail.txt")
+write.table(detail, row.name=FALSE, file = "./detail.txt")
